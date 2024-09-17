@@ -23,14 +23,14 @@ The dataset includes the volume of inquiries from the 3-1-1 Contact Centre from 
 *	The inquiry volume dataset is located in the City of Vancouver Portal (opendata.vancouver.ca/pages/home) within the theme of Government and Finance.
 ![Open Data Portal](images/open_data_portal.png)
 * The place for storage of the datasets will be inside a bucket created in the Cloud with the assistance of the service S3 of AWS. The design for the data storage is shown in the following figure:
-![storage design](images/storage_design.png)
+![storage design](images/storage_design_s3.png)
 * Three types of folders have been created. “Landing,” where the operational datasets will be stored; “Raw,” for the storage of the cleaned and structured datasets; and "Curated," for the storage of the metric dataset and the analyzed data queries.
 * Then we do the data ingestion, loading the datasets in their respective folder and their corresponding year:
 ![data ingestion](images/data_ingestion.png)
 
 #### 3. Data Pipeline Design:
 * A data lineage diagram was built to go from the operational datasets to reach an analytical dataset for each year that contains the descriptive metric and ensures that the data is high quality, has structure, and is summarized.
-![ETL design](images/ETL_design.png)
+![ETL design](images/ETL_design.jpg)
 
 #### 4. Data Preparation:
 * Using AWS Glue Data Brew to perform the data cleaning to address missing values, and remove duplicates.
@@ -41,7 +41,7 @@ The dataset includes the volume of inquiries from the 3-1-1 Contact Centre from 
 
 #### 5. Data Pipeline Implementation:
 * Using AWS Glue to build and deploy the designed data pipeline.
-![AWS glue](images/AWS_Glue.png)
+![AWS glue](images/AWS_glue.png)
 
 #### 6. Data Visualization:
 * With the resulting dataset, we can create a visual representation of the findings:
