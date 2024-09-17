@@ -20,4 +20,6 @@ The dataset includes the volume of inquiries from the 3-1-1 Contact Centre from 
 ![Data Analytical Question Formulation](https://github.com/galaes/descriptive-analysis-galy/blob/17f8b6a7f11534d9b13156c7edac7a22974c4371/images/Question%20formulation.png)
 #### 2.Data Collection
 *	The inquiry volume dataset is located in the City of Vancouver Portal (opendata.vancouver.ca/pages/home) within the theme of Government and Finance.
-*	![City of Vancouver Portal](https://github.com/galaes/descriptive-analysis-galy/blob/17f8b6a7f11534d9b13156c7edac7a22974c4371/images/Question%20formulation.png)
+![City of Vancouver Portal](https://github.com/galaes/descriptive-analysis-galy/blob/0c5e83eb980047cd6adc3903bc293933fd791af4/images/open%20data%20portal.png)
+* The place for storage of the datasets will be inside a bucket created in the Cloud with the assistance of the service S3 of AWS. The design for the data storage is shown in the following figure:
+* ![Storage Design S3](https://github.com/galaes/descriptive-analysis-galy/blob/62ca4b980aceec7ccaa0f154a4bdae1d02e34612/images/storage%20design%20s3.png)
