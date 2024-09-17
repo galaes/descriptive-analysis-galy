@@ -11,6 +11,7 @@ The dataset includes the volume of inquiries from the 3-1-1 Contact Centre from 
 * Channel: How the inquiry or request came to the 3-1-1 Contact Centre (e.g., phone).
 * Number of Records: number of records
 * BI_ID: Unique identifier for each department, type, date, and channel (e.g., for the ACCS - Civic Theatres Department, performance inquiry type, for the date of Jul-23 and by phone, the BI_ID is 17589).
+
 ## Methodology:
 #### 1. Data Analytical Question Formulation
 * A descriptive metric was developed to analyze the performance of the 3-1-1 Contact Centre about inquiries.
