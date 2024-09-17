@@ -48,3 +48,13 @@ The dataset includes the volume of inquiries from the 3-1-1 Contact Centre from 
 #### 6.Data Visualization:
 * With the resulting dataset, we can create a visual representation of the findings:
 <img src=https://github.com/galaes/descriptive-analysis-galy/blob/6a0d6e37586b2a78dd72a686251cf867954f6ba5/images/visual.png width="60%" height="auto">
+
+#### 7.Data Visualization:
+* From the visualization, the channel most used by citizens in the city of Vancouver to make inquiries is the phone, with 25,931 inquiries in 2023 and 29,101 in 2024, with 87.01% and 89.15%, respectively.
+* The next channel most used is the chat, with 3,820 in 2023 and 3,507 in 2024. These inquiries represent 12.82% and 10.71%, respectively.
+* Email and social media are the least used channels by citizens. The inquiries from email were only 38 in 2023, representing 0.13% of the total. This amount decreased in 2024, with 17 inquiries representing 0.05% of the total. Regarding social media, in 2023, there were 12 inquiries through this channel, which was 0.04% of the total. In 2024, the amount increased slightly, representing 0.06% of the total.
+
+#### 8.Recommendations:
+* Based on the findings, it is recommended to evaluate the reasons because the citizens prefer mostly phone over the other channels (time of response, accuracy, etc.)
+* Whether after the evaluation, all channels provide the same functionalities, such as quick response time, considering the elimination of the least used channel or further channel boost.
+
