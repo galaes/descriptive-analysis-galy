@@ -17,31 +17,31 @@ The dataset includes the volume of inquiries from the 3-1-1 Contact Centre from 
 * Descriptive Metric: Inquiry Volume by channel
   * Description: This metric will track the number of inquiries received by the Contact Centre across different channels (phone, email, chat, social media, etc.) over a specific period.
   * Operational Datasets: Inquiry Volume Dataset.
-![Data Analytical Question Formulation](images/Question formulation.png)
+![Data Analytical Question Formulation](images/Question_formulation.png)
 
 #### 2. Data Collection
 *	The inquiry volume dataset is located in the City of Vancouver Portal (opendata.vancouver.ca/pages/home) within the theme of Government and Finance.
-![Open Data Portal](images/open data portal.png)
+![Open Data Portal](images/open_data_portal.png)
 * The place for storage of the datasets will be inside a bucket created in the Cloud with the assistance of the service S3 of AWS. The design for the data storage is shown in the following figure:
-![storage design](images/storage design.png)
+![storage design](images/storage_design.png)
 * Three types of folders have been created. “Landing,” where the operational datasets will be stored; “Raw,” for the storage of the cleaned and structured datasets; and "Curated," for the storage of the metric dataset and the analyzed data queries.
 * Then we do the data ingestion, loading the datasets in their respective folder and their corresponding year:
-![data ingestion](images/data ingestion.png)
+![data ingestion](images/data_ingestion.png)
 
 #### 3. Data Pipeline Design:
 * A data lineage diagram was built to go from the operational datasets to reach an analytical dataset for each year that contains the descriptive metric and ensures that the data is high quality, has structure, and is summarized.
-![ETL design](images/ETL design.png)
+![ETL design](images/ETL_design.png)
 
 #### 4. Data Preparation:
 * Using AWS Glue Data Brew to perform the data cleaning to address missing values, and remove duplicates.
-![data preparation 1](images/data preparation 1.png)
+![data preparation 1](images/data_preparation_1.png)
 
 *	Using AWS Glue Data Brew to perform data type conversions to ensure that all fields are in suitable formats for analysis and derive new features that may aid in analytics, such as separate year for the Year Month column.
-![data preparation 2](images/data preparation 2.png)
+![data preparation 2](images/data_preparation_2.png)
 
 #### 5. Data Pipeline Implementation:
 * Using AWS Glue to build and deploy the designed data pipeline.
-![AWS glue](images/AWS Glue.png)
+![AWS glue](images/AWS_Glue.png)
 
 #### 6. Data Visualization:
 * With the resulting dataset, we can create a visual representation of the findings:
