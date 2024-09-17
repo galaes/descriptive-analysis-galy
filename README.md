@@ -17,4 +17,7 @@ The dataset includes the volume of inquiries from the 3-1-1 Contact Centre from 
 * Descriptive Metric: Inquiry Volume by channel
   * Description: This metric will track the number of inquiries received by the Contact Centre across different channels (phone, email, chat, social media, etc.) over a specific period.
   * Operational Datasets: Inquiry Volume Dataset.
-![Data Analytical Question Formulation](
+![Data Analytical Question Formulation](https://github.com/galaes/descriptive-analysis-galy/blob/17f8b6a7f11534d9b13156c7edac7a22974c4371/images/Question%20formulation.png)
+#### 2.Data Collection
+*	The inquiry volume dataset is located in the City of Vancouver Portal (opendata.vancouver.ca/pages/home) within the theme of Government and Finance.
+*	![City of Vancouver Portal](https://github.com/galaes/descriptive-analysis-galy/blob/17f8b6a7f11534d9b13156c7edac7a22974c4371/images/Question%20formulation.png)
