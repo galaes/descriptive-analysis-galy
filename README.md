@@ -17,46 +17,36 @@ The dataset includes the volume of inquiries from the 3-1-1 Contact Centre from 
 * Descriptive Metric: Inquiry Volume by channel
   * Description: This metric will track the number of inquiries received by the Contact Centre across different channels (phone, email, chat, social media, etc.) over a specific period.
   * Operational Datasets: Inquiry Volume Dataset.
-<img src=https://github.com/galaes/descriptive-analysis-galy/blob/17f8b6a7f11534d9b13156c7edac7a22974c4371/images/Question%20formulation.png width="60%" height="auto">
-
-![Data Analytical Question Formulation](https://github.com/galaes/descriptive-analysis-galy/blob/17f8b6a7f11534d9b13156c7edac7a22974c4371/images/Question%20formulation.png)
-
 ![Data Analytical Question Formulation](images/Question formulation.png)
+
 #### 2. Data Collection
 *	The inquiry volume dataset is located in the City of Vancouver Portal (opendata.vancouver.ca/pages/home) within the theme of Government and Finance.
 <img src=https://github.com/galaes/descriptive-analysis-galy/blob/0c5e83eb980047cd6adc3903bc293933fd791af4/images/open%20data%20portal.png width="60%" height="auto">
-
+![Open Data Portal](images/open data portal.png)
 * The place for storage of the datasets will be inside a bucket created in the Cloud with the assistance of the service S3 of AWS. The design for the data storage is shown in the following figure:
-<img src=https://github.com/galaes/descriptive-analysis-galy/blob/62ca4b980aceec7ccaa0f154a4bdae1d02e34612/images/storage%20design%20s3.png width="60%" height="auto">
-
+![storage design](images/storage design.png)
 * Three types of folders have been created. “Landing,” where the operational datasets will be stored; “Raw,” for the storage of the cleaned and structured datasets; and "Curated," for the storage of the metric dataset and the analyzed data queries.
 * Then we do the data ingestion, loading the datasets in their respective folder and their corresponding year:
-<img src=https://github.com/galaes/descriptive-analysis-galy/blob/eb28987fc2666be77e915f63b8fccee1a2298ff2/images/data%20ingestion.png width="60%" height="auto">
-
+![data ingestion](images/data ingestion.png)
 #### 3. Data Pipeline Design:
 * A data lineage diagram was built to go from the operational datasets to reach an analytical dataset for each year that contains the descriptive metric and ensures that the data is high quality, has structure, and is summarized.
 <img src=https://github.com/galaes/descriptive-analysis-galy/blob/5f15cc5a6c63cd88dc5e4f0302a42d9d6ab5cd41/images/ETL%20design.jpg width="60%" height="auto"> 
-
+![ETL design](images/ETL design.png)
 #### 4. Data Preparation:
 * Using AWS Glue Data Brew to perform the data cleaning to address missing values, and remove duplicates.
-<img src=https://github.com/galaes/descriptive-analysis-galy/blob/06f6194b742810af962247611adbde6948611cb9/images/data%20preparation%201.png width="70%" height="auto"> 
-
+![data preparation 1](images/data preparation 1.png)
 *	Using AWS Glue Data Brew to perform data type conversions to ensure that all fields are in suitable formats for analysis and derive new features that may aid in analytics, such as separate year for the Year Month column.
-<img src=https://github.com/galaes/descriptive-analysis-galy/blob/06f6194b742810af962247611adbde6948611cb9/images/data%20preparation%202.png width="70%" height="auto">
-
+![data preparation 2](images/data preparation 2.png)
 #### 5. Data Pipeline Implementation:
 * Using AWS Glue to build and deploy the designed data pipeline.
-<img src=https://github.com/galaes/descriptive-analysis-galy/blob/2b98e72d8e8d8c7aa234ce632178e5695c6f5d7c/images/AWS%20glue.png width="90%" height="auto">
-
+![AWS glue](images/AWS Glue.png)
 #### 6. Data Visualization:
 * With the resulting dataset, we can create a visual representation of the findings:
-<img src=https://github.com/galaes/descriptive-analysis-galy/blob/6a0d6e37586b2a78dd72a686251cf867954f6ba5/images/visual.png width="60%" height="auto">
-
+![visual](images/visual.png)
 #### 7. Insights and Findings:
 * From the visualization, the channel most used by citizens in the city of Vancouver to make inquiries is the phone, with 25,931 inquiries in 2023 and 29,101 in 2024, with 87.01% and 89.15%, respectively.
 * The next channel most used is the chat, with 3,820 in 2023 and 3,507 in 2024. These inquiries represent 12.82% and 10.71%, respectively.
 * Email and social media are the least used channels by citizens. The inquiries from email were only 38 in 2023, representing 0.13% of the total. This amount decreased in 2024, with 17 inquiries representing 0.05% of the total. Regarding social media, in 2023, there were 12 inquiries through this channel, which was 0.04% of the total. In 2024, the amount increased slightly, representing 0.06% of the total.
-
 #### 8. Recommendations:
 * Based on the findings, it is recommended to evaluate the reasons because the citizens prefer mostly phone over the other channels (time of response, accuracy, etc.)
 * Whether after the evaluation, all channels provide the same functionalities, such as quick response time, considering the elimination of the least used channel or further channel boost.
