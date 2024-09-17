@@ -57,3 +57,14 @@ The dataset includes the volume of inquiries from the 3-1-1 Contact Centre from 
 * Based on the findings, it is recommended to evaluate the reasons because the citizens prefer mostly phone over the other channels (time of response, accuracy, etc.)
 * Whether after the evaluation, all channels provide the same functionalities, such as quick response time, considering the elimination of the least used channel or further channel boost.
 
+## Tools and Technologies:
+* AWS (S3, Glue DataBrew, AWS Glue) for data analysis.
+*	Data visualization tools (Excel) for creating the findings report.
+
+## Deliverables:
+*	A detailed report summarizing the methods, findings, and recommendations.
+*	Visualizations to present key insights clearly.
+
+
+
+
